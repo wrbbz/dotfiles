@@ -38,7 +38,7 @@ font-2 =				IPAGothic:pixelsize=13;3
 
 modules-left =			bspwm
 modules-center =		date
-modules-right =			wired wlan temperature backlight volume battery
+modules-right =			wired wlan temperature backlight pavolume battery
 
 wm-restack =			bspwm
 
@@ -160,6 +160,16 @@ format-prefix =						" "
 format-prefix-foreground =			${colors.aqua}
 
 label =								%date% %time%
+
+[module/pavolume]
+type = custom/script
+tail = true
+label = %output%
+exec = ~/.scripts/.pulseaudio --listen
+click-right = exec pavucontrol
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scroll-up = ~/.config/polybar/pavolume.sh --up
+scroll-down = ~/.config/polybar/pavolume.sh --down
 
 [module/volume]
 type =								internal/volume
