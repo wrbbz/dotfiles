@@ -1,0 +1,13 @@
+#!/bin/bash
+setxkbmap us
+tmpbg="/tmp/lockscreen.png"
+pic="$HOME/.wallpaper/lockscreen.png"
+
+scrot "$tmpbg"
+convert "$tmpbg" -scale 10% -scale 1000% -fill black -colorize 25% "$tmpbg"
+
+if [ -f "$pic" ]; then
+	convert "$tmpbg" "$pic" -gravity East -geometry +700+0 -composite -matte "$tmpbg" && convert "$tmpbg" "$pic" -gravity West -geometry +279+0 -composite -matte "$tmpbg"
+fi
+
+i3lock -n -e -t -i "$tmpbg" >> /dev/null
