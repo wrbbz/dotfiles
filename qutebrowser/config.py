@@ -15,7 +15,12 @@ c.aliases = {
 			'q': 'quit', 
 			'wq': 'quit --save',
 			'pics': 'open https://unsplash.com',
-			'snow': 'open https://whitelines.com/photos/wallpapers'
+			'snow': 'open https://whitelines.com/photos/wallpapers',
+			'nvidia': 'open https://compute.nvidia.com',
+                        'mpv' : 'spawn mpv {url}',
+                        'ydl' : 'spawn youtube-dl --default-search "ytsearch" "bestvideo[ext=webm]+bestaudio[ext=m4a]" -o "%(title)s.%(ext)s" {url}',
+                        'gh' : 'open https://github.com/ArsenyZorin',
+                        'gl' : 'open https://gitlab.com/ArsenyZorin',
 			}
 
 ## How often (in milliseconds) to auto-save config/cookies/etc.
@@ -24,7 +29,7 @@ c.aliases = {
 
 ## Always restore open sites when qutebrowser is reopened.
 ## Type: Bool
-# c.auto_save.session = False
+c.auto_save.session = True
 
 ## The backend to use to display websites. qutebrowser supports two
 ## different web rendering engines / backends, QtWebKit and QtWebEngine.
@@ -1316,6 +1321,9 @@ c.url.searchengines = {
 # c.zoom.text_only = False
 
 ## Bindings for normal mode
+config.bind("<Alt-h>", 'open -t https://github.com/ArsenyZorin')
+config.bind("<Ctrl-l>", 'open -t https://gitlab.com/ArsenyZorin')
+config.bind("<Alt-m>", 'spawn mpv {url}')
 # config.bind("'", 'enter-mode jump_mark')
 # config.bind('+', 'zoom-in')
 # config.bind('-', 'zoom-out')
