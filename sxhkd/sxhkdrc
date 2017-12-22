@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	urxvt	
+	alacritty	
 
 # GNOME System Monitor
 ctrl + shift + Escape
-	urxvt -e htop
+	alacritty -e htop
 
 # program launcher
 super + space
@@ -25,8 +25,8 @@ super + Escape
 	notify-send --app-name=sxhkd --urgency=low "sxhkd config reloaded"
 
 # Lock Desktop
-super + ctrl + + shift + l
-    notify-send --app-name=i3lock --urgency=low "Screen is locking" & /home/arseny/.scripts/lock.sh
+alt + l
+    notify-send --app-name=i3lock --urgency=low "Screen is locking" & $HOME/.scripts/lock
 
 # QuteBrowser
 super + q
