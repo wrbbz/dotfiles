@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+full=`cat /sys/class/power_supply/BAT0/charge_full`
+now=`cat /sys/class/power_supply/BAT0/charge_now`
+bat_status=`cat /sys/class/power_supply/BAT0/status`
+
+full=$(( $full + 0.0 ))
+percentage=$(( $now / $full ))
+result=$(( $percentage * 100 ))
+
+result=`echo $result | awk -F'.' '{ print $1 }'`
+
+echo $bat_status
+if [[ ${bat_status} = 'Charging' ]]; then
+	pics=(           )	
+	for i in {0..2}; do
+		for j in "$pics[@]"; do
+			sleep 0.2
+			dunstify "$j $result%" -r 3003 -u low
+		done
+	done
+else
+	if [[ result -ge 80 ]]; then
+		printmessage="  $result%"
+	elif [[ result -le 79 && result -ge 60 ]]; then
+		printmessage="  $result%"
+	elif [[ resutl -le 59 && result -ge 40 ]]; then
+		printmessage="  $result%"
+	elif [[ resutl -le 39 && result -ge 20 ]]; then
+		printmessage="  $result%"
+	elif [[ resutl -le 19 ]]; then
+		printmessage="  $result%"
+	fi
+	dunstify $printmessage -r 3003 -u low
+fi
