@@ -39,6 +39,8 @@ set background=dark
 " save cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
+filetype plugin on
+
 function! ResCur()
   if line("'\"") <= line("$")
     normal! g`"
@@ -57,3 +59,8 @@ set autoindent		" Indent according to previous line.
 set tabstop =4		" Show existing tabulations
 set softtabstop =4	" Tab key indents by 4 spaces.
 set shiftwidth =4
+
+cnoremap w!! w !sudo tee > /dev/null %
+
+hi clear SpellBad
+hi SpellBad cterm=underline
