@@ -1,0 +1,31 @@
+# vim: filetype=neomuttrc
+# muttrc file for account spbpu_work
+set realname = "spbpu_work"
+set from = "arseny.zorin@spbpu.com"
+set sendmail = "/usr/bin/msmtp -a spbpu_work"
+set folder = "~/.mail/spbpu_work"
+set header_cache = ~/.config/mutt/accounts/spbpu_work/cache/headers
+set message_cachedir = ~/.config/mutt/accounts/spbpu_work/cache/bodies
+set certificate_file = ~/.config/mutt/accounts/spbpu_work/certificates
+source "~/.config/mutt/credentials/getmuttpass spbpu_work |"
+
+alias me Arseny Zorin <arseny.zorin@spbpu.com>
+alias ejiek Vladislav Petrov <vladislav.petrov@spbpu.com>
+
+set mbox_type = Maildir
+set ssl_starttls = no
+set ssl_force_tls = yes
+
+bind index,pager gg noop
+bind index,pager g noop
+bind index gg first-entry
+unmailboxes *
+mailboxes =spbpu_work =------------------- "=Sent" "=Trash" "=Drafts" "=Spam" "=drafts" "=Drafts" "=Inbox""
+macro index,pager gi "<change-folder>=Inbox<enter>" "Go to inbox."
+macro index,pager gs "<change-folder>=Sent<enter>" "Go to sent."
+macro index,pager gd "<change-folder>=Drafts<enter>" "Go to drafts."
+macro index,pager gt "<change-folder>=Trash<enter>" "Go to trash."
+macro index,pager gS "<change-folder>=Spam<enter>" "Go to spam."
+set spoolfile = "+Inbox"
+set record = "+Sent"
+set postponed = "+Drafts"
