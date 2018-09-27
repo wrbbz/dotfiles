@@ -1,2 +1,0 @@
-macro index,pager i1 '<sync-mailbox><enter-command>source /home/azorin/.config/mutt/accounts/spbpu_work.muttrc<enter><change-folder>!<enter>'
-source /home/azorin/.config/mutt/accounts/spbpu_work.muttrc
