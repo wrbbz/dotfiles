@@ -25,3 +25,5 @@ bspc rula -a feh state=floating
 
 compton --config $HOME/.config/compton.conf -b
 sh $HOME/.scripts/fehbg
+eval $(ssh-agent -s)
+sh $HOME/.scripts/fehbg
