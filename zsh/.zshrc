@@ -5,10 +5,7 @@
 export XDG_CONFIG_HOME=$HOME/.config
 export ZSH=$HOME/.oh-my-zsh
 export VISUAL="vim"
-export PATH=$PATH:/opt/apache-maven-3.5.0
-export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
-export WEECHAT_HOME=$HOME/.weechat
 export TERM=xterm
 export BROWSER="GTK_BACKEND=wayland qutebrowser --backend webengine"
 
@@ -104,4 +101,8 @@ __trans() {
 }
 __def() {
     sdcv --color --data-dir /usr/share/stardict/dic/def/ $* | less -R
+}
+alias oui='__oui'
+__oui() {
+	grep $* -i /usr/share/nmap/nmap-mac-prefixes
 }
