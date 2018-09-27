@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+STATUS=$(tizonia-remote playstatus)
+if [[ ${STATUS} = '"Playing"' ]]; then
+	$(tizonia-remote pause)
+elif [[ ${STATUS} = '"Paused"' ]]; then
+	$(tizonia-remote play)
+fi

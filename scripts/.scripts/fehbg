@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill $HOME/.wallpaper/background.jpg
+feh --bg-fill --no-xinerama $HOME/.wallpaper/hill.jpg
