@@ -2,12 +2,15 @@
 
 sxhkd &
 kbdd &
+unclutter &
 
-xrandr --output DP-1 --auto --rotate left --left-of DP-2
-xrandr --output DP-2 --pos 1440x600
-#bspc monitor -d I II III IV V VI VII VIII IX 
-bspc monitor DP-1 -d I II III IV V 
-bspc monitor DP-2 -d VI VII VIII IX X
+xrandr --output DP-0 --auto --rotate left --right-of DP-6
+xrandr --output DP-4 --auto --rotate left --left-of DP-6
+xrandr --output DP-6 --pos 1440x600
+
+bspc monitor DP-6 -d 1 2 3 4 5
+bspc monitor DP-4 -d 6 7 8 9 0
+bspc monitor DP-0 -d 11 12 13 14 15
 
 bspc config border_width			0
 bspc config window_gap				20
@@ -28,9 +31,12 @@ bspc rula -a feh state=floating
 
 compton --config $HOME/.config/compton.conf -b
 # setxkbmap -option caps:swapescape
-setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,grp_led:caps'
-eval $(ssh-agent -s)
-sh ~/.scripts/fehbg
+# setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,grp_led:caps'
+# xmodmap ~/.Xmodmap
+# setxkbmap -layout "us,ru" -option "grp:escape,grp_led:caps"
 
-polybar primary &
-polybar secondary &
+eval $(ssh-agent -s)
+sh $HOME/.scripts/fehbg
+
+# polybar primary &
+# polybar secondary &
