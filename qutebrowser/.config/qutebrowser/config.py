@@ -20,7 +20,7 @@ c.aliases = {
 			'proxy-gateway': 'set content.proxy socks://localhost:8118/',
 	        'proxy-off': 'set content.proxy system',
             'mpv' : 'spawn mpv {url}',
-            'ydl' : 'spawn youtube-dl --default-search "ytsearch" "bestvideo[ext=webm]+bestaudio[ext=m4a]" -o "%(title)s.%(ext)s" {url}',
+            'ydl' : 'spawn youtube-dl {url}',
             'gh' : 'open https://github.com/ArsenyZorin',
             'gl' : 'open https://gitlab.com/ArsenyZorin',
             'ff' : 'spawn firefox {url}',
@@ -727,7 +727,7 @@ c.editor.command = ['alacritty', '-e', 'vim', '{}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
-# c.editor.encoding = 'utf-8'
+c.editor.encoding = 'utf-8'
 
 ## Font used in the completion categories.
 ## Type: Font
@@ -1016,7 +1016,7 @@ c.fonts.web.size.default_fixed = 15
 ## QtWebEngine to work with Nouveau drivers. This setting requires a
 ## restart.
 ## Type: Bool
-# c.qt.force_software_rendering = False
+c.qt.force_software_rendering = "none"
 
 ## Show a scrollbar.
 ## Type: Bool
@@ -1331,7 +1331,7 @@ c.url.searchengines = {
 ## Bindings for normal mode
 config.bind("<Alt-h>", 'open -t https://github.com/ArsenyZorin')
 config.bind("<Ctrl-l>", 'open -t https://gitlab.com/ArsenyZorin')
-config.bind("<Alt-m>", 'spawn mpv {url}')
+config.bind("<Alt-m>", 'spawn mpv {url} --ytdl-raw-options=mark-watched=')
 # config.bind("'", 'enter-mode jump_mark')
 # config.bind('+', 'zoom-in')
 # config.bind('-', 'zoom-out')
