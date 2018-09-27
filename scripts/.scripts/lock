@@ -12,7 +12,7 @@ pic="$HOME/.wallpaper/lockscreen.png"
 #fi
 #convert "$pic" `gcalcli calw --monday` -gravity East -geometry +700+0 "$pic"
 
-convert "$pic" -pointsize 30 -font 'SF-Mono-Regular' -annotate +1600+1000 "`~/.scripts/cal`" -annotate +4050+150 "`task tag:Work li`" $tmp
+convert "$pic" -pointsize 30 -font 'SF-Mono-Regular' -annotate +1600+1000 "`~/.scripts/cal`" -annotate +4050+150 "`task +Work or +Siemens li`" $tmp
 
 #i3lock -i /tmp/lock
 i3lock -n -e -t -i /tmp/lock >> /dev/null
