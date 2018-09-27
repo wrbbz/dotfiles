@@ -39,6 +39,8 @@ set background=dark
 " save cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
+filetype plugin on
+
 function! ResCur()
   if line("'\"") <= line("$")
     normal! g`"
