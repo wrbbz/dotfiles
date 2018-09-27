@@ -17,10 +17,11 @@ c.aliases = {
 			'pics': 'open https://unsplash.com',
 			'snow': 'open https://whitelines.com/photos/wallpapers',
 			'nvidia': 'open https://compute.nvidia.com',
-                        'mpv' : 'spawn mpv {url}',
+                        'mpv' : 'spawn mpv {url} --ytdl-raw-options=mark-watched=',
                         'ydl' : 'spawn youtube-dl --default-search "ytsearch" "bestvideo[ext=webm]+bestaudio[ext=m4a]" -o "%(title)s.%(ext)s" {url}',
                         'gh' : 'open https://github.com/ArsenyZorin',
                         'gl' : 'open https://gitlab.com/ArsenyZorin',
+                        'cloud' : 'open https://cloud.lab215.com'
 			}
 
 ## How often (in milliseconds) to auto-save config/cookies/etc.
@@ -720,11 +721,11 @@ c.backend = 'webengine'
 ## The editor (and arguments) to use for the `open-editor` command. `{}`
 ## gets replaced by the filename of the file to be edited.
 ## Type: ShellCommand
-# c.editor.command = ['gvim', '-f', '{}']
+c.editor.command = ['alacritty', '-e', 'vim', '{}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
-# c.editor.encoding = 'utf-8'
+c.editor.encoding = 'utf-8'
 
 ## Font used in the completion categories.
 ## Type: Font
@@ -1013,7 +1014,7 @@ c.backend = 'webengine'
 ## QtWebEngine to work with Nouveau drivers. This setting requires a
 ## restart.
 ## Type: Bool
-# c.qt.force_software_rendering = False
+c.qt.force_software_rendering = "none"
 
 ## Show a scrollbar.
 ## Type: Bool
@@ -1323,7 +1324,7 @@ c.url.searchengines = {
 ## Bindings for normal mode
 config.bind("<Alt-h>", 'open -t https://github.com/ArsenyZorin')
 config.bind("<Ctrl-l>", 'open -t https://gitlab.com/ArsenyZorin')
-config.bind("<Alt-m>", 'spawn mpv {url}')
+config.bind("<Alt-m>", 'spawn mpv {url} --ytdl-raw-options=mark-watched=')
 # config.bind("'", 'enter-mode jump_mark')
 # config.bind('+', 'zoom-in')
 # config.bind('-', 'zoom-out')
