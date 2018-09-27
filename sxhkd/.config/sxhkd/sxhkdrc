@@ -14,6 +14,9 @@ ctrl + shift + Escape
 super + space
 	rofi -show run
 
+super + p
+	rofi-pass
+
 # rofi -show run -lines 10 -padding 300 -opacity "100" -font "Roboto Mono 15" -width 1368 -separator-style "none" -hide-scrollbar -color-window "argb:dd000000, argb:0002b36, argb:7bffffff" -color-normal "argb:0ffffff, #ffffff, argb:0eee8d5, #ffffff, #000000" -color-active "argb:0fdf6e3, #268bd2, argb:0eee8d5, #268bd2, #fdf6e3" -color-urgent "argb:0fdf6e3, #dc322f, argb:0eee8d5, #dc322f, #fdf6e3"	
 
 super + shift + space
@@ -25,8 +28,10 @@ super + Escape
 	notify-send --app-name=sxhkd --urgency=low "sxhkd config reloaded"
 
 # Lock Desktop
-alt + l
-    notify-send --app-name=i3lock --urgency=low "Screen is locking" & $HOME/.scripts/lock
+# alt + l
+XF86Favorites
+    dunstify --urgency=low "Screen is locking" -r 3005; \
+	$HOME/.scripts/lock
 
 ctrl + alt + d
 	$HOME/.scripts/date	
@@ -160,7 +165,7 @@ super + ctrl + {Left,Right,Up,Down}
 
 # Screenshots
 Print
-	scrot ~/mediahdd/screenshots/%Y-%m-%d-%T-screenshot.png; \
+	scrot $HOME/screenshots/%Y-%m-%d-%T-screenshot.png; \
 	notify-send "Screenshot saved"
 
 ctrl + Print
@@ -175,6 +180,16 @@ ctrl + shift + Print
 	gnome-screenshot -ac; \
 	notify-send "Screenshot copied to clipboard and saved"
 
+# Tizonia-rmote
+
+XF86Back
+	tizonia-remote prev
+
+XF86Forward
+	tizonia-remote next
+
+XF86AudioPlay
+	$HOME/.scripts/tizonia_toggle	
 # VOLUME
 
 ### Mute
