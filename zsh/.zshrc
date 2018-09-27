@@ -2,13 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/arseny/.oh-my-zsh
-export VISUAL="vim"
+export ZSH=$HOME/.oh-my-zsh
+export EDITOR="vim"
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$PATH:/home/arseny/mediahdd/local/RPi/crosstool-ng/bin/
+export PATH=$PATH:$HOME/mediahdd/local/RPi/crosstool-ng/bin/
 export TERM=xterm
+# export PYTHONPATH=$PYTHONPATH:/home/azorin/Repos/models/research:/home/azorin/Repos/models/research/slim
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -95,3 +96,18 @@ alias wttr="curl wttr.in"
 alias untar="tar -xvzf"
 alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
+alias ydl="youtube-dl --default-search 'ytsearch' 'bestvideo[ext=webm]+bestaudio[ext=m4a]' -o '%(title)s.%(ext)s'"
+
+alias trans='__trans'
+alias def='__def'
+__trans() {
+	sdcv --color --data-dir /usr/share/stardict/dic/trans/ $* | less -R
+}
+__def() {
+	sdcv --color --data-dir /usr/share/stardict/dic/def/ $* | less -R
+}
+alias trpntn="mpv https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg --no-video --shuffle"
+alias oui='__oui'
+__oui() {
+	grep $* -i /usr/share/nmap/nmap-mac-prefixes
+}
