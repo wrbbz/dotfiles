@@ -1,5 +1,6 @@
 [general]
-accounts = spbpu_work, spbpu_work
+accounts = spbpu_work
+maxsyncaccounts=1
 starttls = yes
 ssl = yes
 pythonfile = ~/.config/mutt/credentials/imappwd.py
@@ -8,6 +9,8 @@ pythonfile = ~/.config/mutt/credentials/imappwd.py
 
 localrepository = spbpu_work-local
 remoterepository = spbpu_work-remote
+autorefresh=2
+quick=10
 
 [Repository spbpu_work-remote]
 auth_mechanisms = LOGIN
@@ -17,6 +20,8 @@ remotepasseval = mailpasswd("spbpu_work")
 remotehost = imap.mail.ru
 remoteport = 993
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+keepalive=140
+holdconnectionopen=yes
 nametrans = lambda folder: {'&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-': 'Sent',
                             '&BBgEQQRFBD4ENARPBEkEOAQ1-': 'Outbox',
                             '&BCcENQRABD0EPgQyBDgEOgQ4-': 'Drafts',
