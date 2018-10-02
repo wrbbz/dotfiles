@@ -4,12 +4,12 @@ sxhkd &
 kbdd &
 unclutter &
 
-xrandr --output DP-0 --auto --rotate left --right-of DP-6
-xrandr --output DP-4 --auto --rotate left --left-of DP-6
-xrandr --output DP-6 --pos 1440x600
+xrandr --output DP-0 --auto --rotate left --right-of DP-7
+xrandr --output DP-4 --auto --rotate left --left-of DP-7
+xrandr --output DP-7 --pos 1440x600
 
-bspc monitor DP-6 -d 1 2 3 4 5
-bspc monitor DP-4 -d 6 7 8 9 0
+bspc monitor DP-4 -d 1 2 3 4 5
+bspc monitor DP-7 -d 6 7 8 9 0
 bspc monitor DP-0 -d 11 12 13 14 15
 
 bspc config border_width			0
@@ -36,7 +36,7 @@ compton --config $HOME/.config/compton.conf -b
 # setxkbmap -layout "us,ru" -option "grp:escape,grp_led:caps"
 
 eval $(ssh-agent -s)
-sh $HOME/.scripts/fehbg
+sh /home/azorin/.scripts/fehbg
 
 # polybar primary &
 # polybar secondary &
