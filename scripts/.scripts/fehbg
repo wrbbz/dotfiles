@@ -1,2 +1,3 @@
 #!/bin/sh
-feh --bg-fill --no-xinerama $HOME/.wallpaper/hill.jpg
+feh --bg-fill --no-xinerama /home/azorin/.wallpaper/background.jpg
+
