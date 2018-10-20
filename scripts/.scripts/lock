@@ -1,0 +1,13 @@
+#!/bin/zsh 
+setxkbmap us
+#tmpbg="/tmp/lockscreen.png"
+pic="$HOME/.wallpaper/gruv_lock.png"
+
+# scrot "$tmpbg"
+# convert "$tmpbg" -scale 10% -scale 1000% -fill black -colorize 25% "$tmpbg"
+# 
+# if [ -f "$pic" ]; then
+# 	convert "$tmpbg" "$pic" -gravity East -geometry +750+0 -composite -matte "$tmpbg"
+# fi
+
+i3lock -e -i "$pic" >> /dev/null
