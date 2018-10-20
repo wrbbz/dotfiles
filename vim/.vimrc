@@ -60,7 +60,9 @@ set tabstop =4		" Show existing tabulations
 set softtabstop =4	" Tab key indents by 4 spaces.
 set shiftwidth =4
 
+" Save with root permissions
 cnoremap w!! w !sudo tee > /dev/null %
 
+" spell check highlighting
 hi clear SpellBad
 hi SpellBad cterm=underline
