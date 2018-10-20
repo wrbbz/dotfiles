@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR="vim"
+export VISUAL="vim"
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$PATH:$HOME/mediahdd/local/RPi/crosstool-ng/bin/
+export BROWSER="GTK_BACKEND=wayland qutebrowser --backend webengine"
 
 # #Arch wiki
 autoload -Uz compinit promptinit
@@ -20,11 +23,15 @@ plugins=(zsh-autosuggestions git)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
 
+setxkbmap -layout "us,ru" option "grp:escape,grp_led:caps"
+xmodmap ~/.Xmodmap
+
 alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
 alias wttr="curl wttr.in"
 alias untar="tar -xvzf"
 alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
+alias trpntn="mpv https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg --no-video --shuffle"
 
 alias trans='__trans'
 alias def='__def'
