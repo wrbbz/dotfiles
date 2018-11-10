@@ -90,13 +90,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,grp_led:caps'
+# setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,grp_led:caps'
+# xmodmap ~/.Xmodmap
+
 alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
 alias wttr="curl wttr.in"
 alias untar="tar -xvzf"
 alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
-alias ydl="youtube-dl --default-search 'ytsearch' 'bestvideo[ext=webm]+bestaudio[ext=m4a]' -o '%(title)s.%(ext)s'"
 
 alias trans='__trans'
 alias def='__def'
@@ -111,3 +112,5 @@ alias oui='__oui'
 __oui() {
 	grep $* -i /usr/share/nmap/nmap-mac-prefixes
 }
+alias ssproxy='ssh -D 8118 -C -N'
+alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='SF Pro Text' -o"
