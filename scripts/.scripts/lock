@@ -2,17 +2,7 @@
 setxkbmap us
 tmp="/tmp/lock"
 pic="$HOME/.wallpaper/lockscreen.png"
-#pic="/home/azorin/rorschach.png"
-
-#scrot "$tmpbg"
-#convert "$tmpbg" -scale 10% -scale 1000% -fill black -colorize 25% "$tmpbg"
-#
-#if [ -f "$pic" ]; then
-#	convert "$tmpbg" "$pic" -gravity East -geometry +700+0 -composite -matte "$tmpbg" && convert "$tmpbg" "$pic1" -gravity West -geometry +279+0 -composite -matte "$tmpbg"
-#fi
-#convert "$pic" `gcalcli calw --monday` -gravity East -geometry +700+0 "$pic"
 
 convert "$pic" -pointsize 30 -font 'SF-Mono-Regular' -annotate +1600+1000 "`~/.scripts/cal`" -annotate +4050+150 "`task +Work or +Siemens li`" $tmp
 
-#i3lock -i /tmp/lock
-i3lock -n -e -t -i /tmp/lock >> /dev/null
+i3lock -i /tmp/lock
