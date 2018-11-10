@@ -94,6 +94,7 @@ alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
 alias trpntn="mpv https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg --no-video --shuffle"
 alias ssproxy='ssh -D 8118 -C -N'
 alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='SF Pro Text' -o"
+
 alias trans='__trans'
 alias def='__def'
 __trans() {
