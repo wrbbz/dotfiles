@@ -1,0 +1,7 @@
+dunst &
+sxhkd &
+kbdd &
+unclutter &
+
+# setxkbmap -layout "us,ru" -option "grp:escape,grp_led:caps"
+# xmodmap ~/.Xmodmap
