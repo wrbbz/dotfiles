@@ -26,8 +26,6 @@ fi
 
 export QT_STYLE_OVERRIDE=GTK+
 export _JAVA_AWT_WM_NONREPARENTING=1
-setxkbmap -layout "us,ru" -option "grp:escape,grp_led:caps"
-xmodmap $HOME/.Xmodmap
 sxhkd &
 dunst &
 kbdd &
