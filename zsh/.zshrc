@@ -91,10 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,grp_led:caps'
-setxkbmap -layout "us,ru" option "grp:escape,grp_led:caps"
-xmodmap ~/.Xmodmap
-
 alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
 alias wttr="curl wttr.in/~St.Petersburg" alias untar="tar -xvzf" alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
