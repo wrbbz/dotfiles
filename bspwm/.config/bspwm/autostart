@@ -1,6 +1,5 @@
 dunst &
 sxhkd &
 kbdd &
-unclutter &
-redshift -O 3500K&
+redshft -P -O 3500K
 
