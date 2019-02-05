@@ -197,13 +197,6 @@ XF86AudioLowerVolume
 super + XF86AudioLowerVolume
 	pulsemixer --change-volume -5
 
-button6
-	bspc node -f next; \
-	$HOME/.scripts/desktop
-	
-button7
-	bspc node -f prev; \
-	$HOME/.scripts/desktop
 # BRIGHTNESS
 
 # Brightness goes up
