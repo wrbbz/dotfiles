@@ -1273,10 +1273,11 @@ c.url.searchengines = {
 		'aur' : 'https://aur.archlinux.org/packages/?O=0&K={}',
 		'ebay' : 'https://www.ebay.com/sch/items/?_nkw={}',
 		'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={}',
-		'github' : 'https://github.com/search?utf8=/%E2%9C%93&q={}&type=',
+		'ghub' : 'https://github.com/search?utf8=/%E2%9C%93&q={}&type=',
 		'maps' : 'https://openstreetmap.org/search?query={}',
 		'market' : 'https://market.yandex.ru/search?cvredirect=2&text={}&local-offers-first=1',
 		'comics' :  'http://getcomics.info/?s={}',
+		'crates' : 'https://crates.io/search?q={}',
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
 		}
