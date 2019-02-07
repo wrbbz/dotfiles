@@ -37,7 +37,7 @@ Caps_Lock
 	$HOME/.scripts/layout
 
 # Lock Desktop
-alt + l
+ctrl + alt + l
     notify-send --app-name=i3lock --urgency=low "Screen is locking" & $HOME/.scripts/lock
 
 ctrl + alt + d
