@@ -1282,6 +1282,7 @@ c.url.searchengines = {
 		'crates' : 'https://crates.io/search?q={}',
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
+		'dh': 'https://hub.docker.com/search?q={}&type=image',
 		}
 
 ## The page(s) to open at the start.
