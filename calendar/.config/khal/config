@@ -1,12 +1,12 @@
 [calendars]
 
-[[work_calendar_local]]
+[[private_local]]
 path = ~/.calendars/*
 type = discover
 
 [locale]
 timeformat = %I:%M %p
-dateformat = %d/%m/%Y
-longdateformat = %d/%m/%Y
-datetimeformat = %d/%m/%Y %I:%M %p
-longdatetimeformat = %d/%m/%Y %I:%M %p
+dateformat = %m/%d/%Y
+longdateformat = %m/%d/%Y
+datetimeformat = %m/%d/%Y %I:%M %p
+longdatetimeformat = %m/%d/%Y %I:%M %p
