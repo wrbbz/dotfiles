@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill /home/lobster/.wallpaper/background.jpg
+feh  --bg-fill $HOME/.wallpaper/background.jpg
