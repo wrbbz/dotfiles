@@ -1,0 +1,9 @@
+#!/bin/bash
+
+STATE=$(xkblayout-state print %s)
+if [ "$STATE" == "us" ]
+then
+	setxkbmap -layout ru
+else
+	setxkbmap -layout us
+fi
