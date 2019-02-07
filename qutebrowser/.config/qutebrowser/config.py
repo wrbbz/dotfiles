@@ -23,6 +23,7 @@ c.aliases = {
             'ydl' : 'spawn youtube-dl --default-search "ytsearch" "bestvideo[ext=webm]+bestaudio[ext=m4a]" -o "%(title)s.%(ext)s" {url}',
             'gh' : 'open https://github.com/ArsenyZorin',
             'gl' : 'open https://gitlab.com/ArsenyZorin',
+            'ff' : 'spawn firefox {url}',
 			}
 
 ## How often (in milliseconds) to auto-save config/cookies/etc.
