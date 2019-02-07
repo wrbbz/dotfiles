@@ -1283,6 +1283,7 @@ c.url.searchengines = {
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
 		'dh': 'https://hub.docker.com/search?q={}&type=image',
+		'do': 'https://www.digitalocean.com/community/search?q={}',
 		}
 
 ## The page(s) to open at the start.
