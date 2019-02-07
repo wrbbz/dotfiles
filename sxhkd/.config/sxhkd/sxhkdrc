@@ -33,6 +33,9 @@ alt + l
     dunstify --urgency=normal "Screen is locking" -r 3005; \
 	$HOME/.scripts/lock
 
+Caps_Lock
+	$HOME/.scripts/layout
+
 # Lock Desktop
 alt + l
     notify-send --app-name=i3lock --urgency=low "Screen is locking" & $HOME/.scripts/lock
