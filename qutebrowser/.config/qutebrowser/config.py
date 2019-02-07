@@ -1276,6 +1276,7 @@ c.url.searchengines = {
 		'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={}',
 		'ghub' : 'https://github.com/search?utf8=/%E2%9C%93&q={}&type=',
 		'maps' : 'https://openstreetmap.org/search?query={}',
+		'gmaps': 'https://www.google.ru/maps/search/{}',
 		'market' : 'https://market.yandex.ru/search?cvredirect=2&text={}&local-offers-first=1',
 		'comics' :  'http://getcomics.info/?s={}',
 		'crates' : 'https://crates.io/search?q={}',
