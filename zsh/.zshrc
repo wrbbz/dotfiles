@@ -88,8 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
-alias wttr="curl wttr.in/~St.Petersburg" alias untar="tar -xvzf" alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
+alias wttr="curl wttr.in/~St.Petersburg" 
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
 alias trpntn="mpv https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg --no-video --shuffle"
 alias ssproxy='ssh -D 8118 -C -N'

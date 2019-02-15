@@ -1,4 +1,5 @@
 #! /bin/sh
+unclutter &
 
 ~/.config/bspwm/autostart
 
