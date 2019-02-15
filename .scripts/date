@@ -1,4 +1,0 @@
-#!/bin/zsh
-for COUNT in {0..9}
-do dunstify " `date +"%b %d %Y  %r"`" -r 3000 -u low
-sleep 0.5; done
