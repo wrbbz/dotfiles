@@ -24,5 +24,4 @@ bspc rule -a '*:telegram-desktop' state=tiled desktop=^5
 bspc rula -a feh state=floating
 
 compton --config $HOME/.config/compton.conf -b
-sh ~/.scripts/fehbg
-watch -n 600 ~/.scripts/battery
+sh $HOME/.scripts/fehbg
