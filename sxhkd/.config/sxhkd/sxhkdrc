@@ -179,7 +179,7 @@ Print
 alt + Print
 	scrot --focused ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
 	notify-send "Screenshot of focused window was saved"
-
+#
 # VOLUME
 
 ### Mute
