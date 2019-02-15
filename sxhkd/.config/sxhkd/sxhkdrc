@@ -169,43 +169,7 @@ Print
 	scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
 	notify-send "Screenshot saved"
 
-ctrl + Print
-	gnome-screenshot -c; \
-	notify-send "Screenshot copied to clipboard"
+alt + Print
+	scrot --focused ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
+	notify-send "Screenshot of focused window was saved"
 
-shift + Print
-	gnome-screenshot -a; \
-	notify-send "Screenshot saved"
-
-ctrl + shift + Print
-	gnome-screenshot -ac; \
-	notify-send "Screenshot copied to clipboard and saved"
-
-# VOLUME
-
-### Mute
-XF86AudioMute
-	pulsemixer --toggle-mute
-
-### Master Volume
-XF86AudioRaiseVolume
-	pulsemixer --change-volume +1
-
-super + XF86AudioRaiseVolume
-	pulsemixer --change-volume +5
-
-XF86AudioLowerVolume
-	pulsemixer --change-volume -1
-
-super + XF86AudioLowerVolume
-	pulsemixer --change-volume -5
-
-# BRIGHTNESS
-
-# Brightness goes up
-XF86MonBrightnessUp
-	ebr -i 10
-
-# Brightness goes down
-XF86MonBrightnessDown
-	ebr -d 10
