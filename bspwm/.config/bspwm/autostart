@@ -2,6 +2,5 @@ dunst &
 sxhkd &
 kbdd &
 unclutter &
+redshift -O 3500K&
 
-# setxkbmap -layout "us,ru" -option "grp:escape,grp_led:caps"
-# xmodmap ~/.Xmodmap
