@@ -1,4 +1,5 @@
 Xcursor.theme: breeze-snow-cursor
+Xcursor.size: 32
 
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
@@ -87,5 +88,3 @@ rofi.opacity: 20
 rofi.hide-scrollbar: true
 
 rofi.location:          0
-!rofi.color-enabled:     true
-!'background', 'border'
