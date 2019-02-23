@@ -26,12 +26,12 @@ super + shift + space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd; \
-	notify-send --app-name=sxhkd --urgency=low "sxhkd config reloaded"
+	notify-send --app-name=sxhkd --urgency=normal "sxhkd config reloaded"
 
 # Lock Desktop
 # alt + l
 XF86Favorites
-    dunstify --urgency=low "Screen is locking" -r 3005; \
+    dunstify --urgency=normal "Screen is locking" -r 3005; \
 	$HOME/.scripts/lock
 
 ctrl + alt + d
@@ -42,7 +42,7 @@ ctrl + alt + b
 
 # QuteBrowser
 super + q
-	notify-send --app-name=qutebrowser --urgency=low "browser is running with webengine backend" & qutebrowser --backend webengine 
+	notify-send --app-name=qutebrowser --urgency=normal "browser is running with webengine backend" & qutebrowser --backend webengine 
 #
 # bspwm hotkeys
 #
