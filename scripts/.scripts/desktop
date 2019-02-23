@@ -28,4 +28,4 @@ for row in {1..3}; do
 "
 done
 notification=`echo $notification | sed s/'$ d'//g`
-dunstify "$notification" -r 3001 -u low
+dunstify "$notification" -r 3001 -u normal
