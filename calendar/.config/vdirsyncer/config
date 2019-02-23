@@ -17,4 +17,4 @@ fileext = ".ics"
 type = "caldav"
 url = "https://cloud.ejiek.com"
 username = "azorin"
-password = "your_secret_is_here" 
+password.fetch = ["command", "pass", "ejiek.com/vdirsync"]
