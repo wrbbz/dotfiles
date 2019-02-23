@@ -1282,6 +1282,7 @@ c.url.searchengines = {
                 'crates' : 'https://crates.io/search?q={}',
                 'dh'   : 'https://hub.docker.com/search?q={}&type=image',
                 'do': 'https://www.digitalocean.com/community/search?q={}',
+                'pac' : 'https://www.archlinux.org/packages/?q={}',
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
 		}
