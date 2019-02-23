@@ -8,7 +8,7 @@ export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$PATH:$HOME/mediahdd/local/RPi/crosstool-ng/bin/
-export TERM=xterm
+export TERM=xterm-256color
 # export PYTHONPATH=$PYTHONPATH:/home/azorin/Repos/models/research:/home/azorin/Repos/models/research/slim
 
 # Set name of the theme to load. Optionally, if you set this to "random"
