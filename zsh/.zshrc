@@ -30,7 +30,7 @@ alias wttr="curl wttr.in"
 alias untar="tar -xvzf"
 alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
 alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
-alias trpntn="mpv https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg --no-video --shuffle"
+alias trpntn="mpv --no-video --shuffle https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg"
 alias trans='__trans'
 alias def='__def'
 __trans() {
