@@ -176,17 +176,9 @@ Print
 	scrot $HOME/screenshots/%Y-%m-%d-%T-screenshot.png; \
 	notify-send "Screenshot saved"
 
-ctrl + Print
-	gnome-screenshot -c; \
-	notify-send "Screenshot copied to clipboard"
-
-shift + Print
-	gnome-screenshot -a; \
-	notify-send "Screenshot saved"
-
-ctrl + shift + Print
-	gnome-screenshot -ac; \
-	notify-send "Screenshot copied to clipboard and saved"
+alt + Print
+	scrot --focused ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
+	notify-send "Screenshot of focused window was saved"
 
 # VOLUME
 
