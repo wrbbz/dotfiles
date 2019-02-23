@@ -1279,6 +1279,7 @@ c.url.searchengines = {
                 'gmaps': 'https://www.google.ru/maps/search/{}',
 		'market' : 'https://market.yandex.ru/search?cvredirect=2&text={}&local-offers-first=1',
 		'comics' :  'http://getcomics.info/?s={}',
+                'crates' : 'https://crates.io/search?q={}',
                 'dh'   : 'https://hub.docker.com/search?q={}&type=image',
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
