@@ -1,1 +1,3 @@
-gcalcli --calendar Work --nocolor --nostarted agenda "`date`" "`date --date='+1 month' '+%D'`"
+#!/bin/bash
+
+khal list --format '{title}. At: {start-time}.' --notstarted now 15d
