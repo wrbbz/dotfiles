@@ -1,0 +1,11 @@
+# Mark videos as watched
+--mark-watched
+
+# Display progress in console titlebar
+--console-title
+
+#Download best webm format available or any other best if no webm available
+-f 'bestvideo[ext=webm]+bestaudio[ext=m4a]/best'
+
+# Save all videos under Movies directory in your home directory
+-o ~/Videos/%(title)s.%(ext)s
