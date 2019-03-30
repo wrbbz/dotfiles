@@ -23,8 +23,8 @@ c.aliases = {
                         'ydl' : 'spawn youtube-dl {url}',
                         'gh' : 'open https://github.com/ArsenyZorin',
                         'gl' : 'open https://gitlab.com/ArsenyZorin',
-                        'cloud' : 'open https://cloud.lab215.com'
-                        'music' : 'open https://music.zacharyseguin.ca/'
+                        'cloud' : 'open https://cloud.lab215.com',
+                        'music' : 'open https://music.zacharyseguin.ca/',
 			}
 
 ## How often (in milliseconds) to auto-save config/cookies/etc.
@@ -1284,7 +1284,7 @@ c.url.searchengines = {
                 'dh'   : 'https://hub.docker.com/search/?isOfficial=0&q={}',
 		'enru' : 'https://translate.google.com/#en/ru/{}',
 		'ruen' : 'https://translate.google.com/#ru/en/{}',
-                'music' : 'https://music.zacharyseguin.ca/search?q={}&type=songs'
+                'music' : 'https://music.zacharyseguin.ca/search?q={}&type=songs',
 		}
 
 ## The page(s) to open at the start.
