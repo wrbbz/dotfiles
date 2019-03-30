@@ -1005,6 +1005,7 @@ c.editor.encoding = 'utf-8'
 ## list) will work. This setting requires a restart.
 ## Type: List of String
 # c.qt.args = []
+# AUR package: qt5-webengine-widevine
 c.qt.args = ["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so"]
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
