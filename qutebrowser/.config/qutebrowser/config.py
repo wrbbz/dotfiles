@@ -11,21 +11,21 @@
 ## aliases, while the values are the commands they map to.
 ## Type: Dict
 c.aliases = {
-			'w': 'session-save', 
-			'q': 'quit', 
-			'wq': 'quit --save',
-			'pics': 'open https://unsplash.com',
-			'snow': 'open https://whitelines.com/photos/wallpapers',
-			'nvidia': 'open https://compute.nvidia.com',
-                        'proxy-gateway': 'set content.proxy socks://localhost:8118/',
-                        'proxy-off': 'set content.proxy system',
-                        'mpv' : 'spawn mpv {url} --ytdl-raw-options=mark-watched=',
-                        'ydl' : 'spawn youtube-dl {url}',
-                        'gh' : 'open https://github.com/ArsenyZorin',
-                        'gl' : 'open https://gitlab.com/ArsenyZorin',
-                        'cloud' : 'open https://cloud.lab215.com',
-                        'music' : 'open https://music.zacharyseguin.ca/',
-			}
+    "w": "session-save",
+    "q": "quit",
+    "wq": "quit --save",
+    "pics": "open https://unsplash.com",
+    "snow": "open https://whitelines.com/photos/wallpapers",
+    "nvidia": "open https://compute.nvidia.com",
+    "proxy-gateway": "set content.proxy socks://localhost:8118/",
+    "proxy-off": "set content.proxy system",
+    "mpv": "spawn mpv {url} --ytdl-raw-options=mark-watched=",
+    "ydl": "spawn youtube-dl {url}",
+    "gh": "open https://github.com/ArsenyZorin",
+    "gl": "open https://gitlab.com/ArsenyZorin",
+    "cloud": "open https://cloud.lab215.com",
+    "music": "open https://music.zacharyseguin.ca/",
+}
 
 ## How often (in milliseconds) to auto-save config/cookies/etc.
 ## Type: Int
@@ -47,7 +47,7 @@ c.auto_save.session = True
 ## Valid values:
 ##   - webengine: Use QtWebEngine (based on Chromium)
 ##   - webkit: Use QtWebKit (based on WebKit, similar to Safari)
-c.backend = 'webengine'
+c.backend = "webengine"
 
 ## This setting can be used to map keys to other keys. When the key used
 ## as dictionary-key is pressed, the binding for the key used as
@@ -724,11 +724,11 @@ c.backend = 'webengine'
 ## The editor (and arguments) to use for the `open-editor` command. `{}`
 ## gets replaced by the filename of the file to be edited.
 ## Type: ShellCommand
-c.editor.command = ['alacritty', '-e', 'vim', '{}']
+c.editor.command = ["alacritty", "-e", "vim", "{}"]
 
 ## Encoding to use for the editor.
 ## Type: Encoding
-c.editor.encoding = 'utf-8'
+c.editor.encoding = "utf-8"
 
 ## Font used in the completion categories.
 ## Type: Font
@@ -1266,26 +1266,26 @@ c.qt.force_software_rendering = "none"
 ## `:open google qutebrowser`.
 ## Type: Dict
 c.url.searchengines = {
-		'DEFAULT': 'https://duckduckgo.com/?q={}',
-		'g': 'https://www.google.com/search?hl=en&q={}',
-		'tpb' : 'https://thepiratebay.org/search/{}',
-		'aw' : 'https://wiki.archlinux.org/?search={}',
-		'yt' : 'https://youtube.com/results?search_query={}',
-		'w' : 'https://en.wikipedia.org/?search={}',
-		'ya' : 'https://yandex.ru/?search={}',
-		'ali' : 'https://ru.aliexpress.com/wholesale?SearchText={}',
-		'aur' : 'https://aur.archlinux.org/packages/?O=0&K={}',
-		'ebay' : 'https://www.ebay.com/sch/items/?_nkw={}',
-		'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={}',
-		'ghub' : 'https://github.com/search?utf8=/%E2%9C%93&q={}&type=',
-		'maps' : 'https://openstreetmap.org/search?query={}',
-		'market' : 'https://market.yandex.ru/search?cvredirect=2&text={}&local-offers-first=1',
-		'comics' :  'http://getcomics.info/?s={}',
-                'dh'   : 'https://hub.docker.com/search/?isOfficial=0&q={}',
-		'enru' : 'https://translate.google.com/#en/ru/{}',
-		'ruen' : 'https://translate.google.com/#ru/en/{}',
-                'music' : 'https://music.zacharyseguin.ca/search?q={}&type=songs',
-		}
+    "DEFAULT": "https://duckduckgo.com/?q={}",
+    "g": "https://www.google.com/search?hl=en&q={}",
+    "tpb": "https://thepiratebay.org/search/{}",
+    "aw": "https://wiki.archlinux.org/?search={}",
+    "yt": "https://youtube.com/results?search_query={}",
+    "w": "https://en.wikipedia.org/?search={}",
+    "ya": "https://yandex.ru/?search={}",
+    "ali": "https://ru.aliexpress.com/wholesale?SearchText={}",
+    "aur": "https://aur.archlinux.org/packages/?O=0&K={}",
+    "ebay": "https://www.ebay.com/sch/items/?_nkw={}",
+    "amazon": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={}",
+    "ghub": "https://github.com/search?utf8=/%E2%9C%93&q={}&type=",
+    "maps": "https://openstreetmap.org/search?query={}",
+    "market": "https://market.yandex.ru/search?cvredirect=2&text={}&local-offers-first=1",
+    "comics": "http://getcomics.info/?s={}",
+    "dh": "https://hub.docker.com/search/?isOfficial=0&q={}",
+    "enru": "https://translate.google.com/#en/ru/{}",
+    "ruen": "https://translate.google.com/#ru/en/{}",
+    "music": "https://music.zacharyseguin.ca/search?q={}&type=songs",
+}
 
 ## The page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
@@ -1329,9 +1329,9 @@ c.url.searchengines = {
 # c.zoom.text_only = False
 
 ## Bindings for normal mode
-config.bind("<Alt-h>", 'open -t https://github.com/ArsenyZorin')
-config.bind("<Ctrl-l>", 'open -t https://gitlab.com/ArsenyZorin')
-config.bind("<Alt-m>", 'spawn mpv {url} --ytdl-raw-options=mark-watched=')
+config.bind("<Alt-h>", "open -t https://github.com/ArsenyZorin")
+config.bind("<Ctrl-l>", "open -t https://gitlab.com/ArsenyZorin")
+config.bind("<Alt-m>", "spawn mpv {url} --ytdl-raw-options=mark-watched=")
 # config.bind("'", 'enter-mode jump_mark')
 # config.bind('+', 'zoom-in')
 # config.bind('-', 'zoom-out')
