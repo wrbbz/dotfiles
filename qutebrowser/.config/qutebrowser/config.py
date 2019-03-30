@@ -732,11 +732,11 @@ c.editor.encoding = "utf-8"
 
 ## Font used in the completion categories.
 ## Type: Font
-# c.fonts.completion.category = 'bold 8pt monospace'
+#c.fonts.completion.category = 'bold 12pt monospace'
 
 ## Font used in the completion widget.
 ## Type: Font
-# c.fonts.completion.entry = '8pt monospace'
+c.fonts.completion.entry = '15pt monospace'
 
 ## Font used for the debugging console.
 ## Type: QtFont
@@ -744,7 +744,7 @@ c.editor.encoding = "utf-8"
 
 ## Font used for the downloadbar.
 ## Type: Font
-# c.fonts.downloads = '8pt monospace'
+c.fonts.downloads = '12pt monospace'
 
 ## Font used for the hints.
 ## Type: Font
@@ -752,19 +752,19 @@ c.editor.encoding = "utf-8"
 
 ## Font used in the keyhint widget.
 ## Type: Font
-# c.fonts.keyhint = '8pt monospace'
+c.fonts.keyhint = '15pt monospace'
 
 ## Font used for error messages.
 ## Type: Font
-# c.fonts.messages.error = '8pt monospace'
+c.fonts.messages.error = '15pt monospace'
 
 ## Font used for info messages.
 ## Type: Font
-# c.fonts.messages.info = '8pt monospace'
+c.fonts.messages.info = '15pt monospace'
 
 ## Font used for warning messages.
 ## Type: Font
-# c.fonts.messages.warning = '8pt monospace'
+c.fonts.messages.warning = '15pt monospace'
 
 ## Default monospace fonts. Whenever "monospace" is used in a font
 ## setting, it's replaced with the fonts listed here.
@@ -773,15 +773,15 @@ c.editor.encoding = "utf-8"
 
 ## Font used for prompts.
 ## Type: Font
-# c.fonts.prompts = '8pt sans-serif'
+c.fonts.prompts = '15pt sans-serif'
 
 ## Font used in the statusbar.
 ## Type: Font
-# c.fonts.statusbar = '8pt monospace'
+c.fonts.statusbar = '15pt monospace'
 
 ## Font used in the tab bar.
 ## Type: QtFont
-# c.fonts.tabs = '8pt monospace'
+c.fonts.tabs = '15pt monospace'
 
 ## Font family for cursive fonts.
 ## Type: FontFamily
@@ -809,11 +809,11 @@ c.editor.encoding = "utf-8"
 
 ## The default font size for regular text.
 ## Type: Int
-# c.fonts.web.size.default = 16
+c.fonts.web.size.default = 15
 
 ## The default font size for fixed-pitch text.
 ## Type: Int
-# c.fonts.web.size.default_fixed = 13
+c.fonts.web.size.default_fixed = 15
 
 ## The hard minimum font size.
 ## Type: Int

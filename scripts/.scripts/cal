@@ -1,1 +1,1 @@
-gcalcli --calendar Work --nocolor --nostarted agenda "`date`" "`date --date='+1 month' '+%D'`"
+gcalcli --calendar Arseny --nocolor --nostarted agenda "`date`" "`date --date=+1 month +%D`"

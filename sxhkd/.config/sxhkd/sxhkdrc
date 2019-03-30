@@ -29,11 +29,12 @@ super + Escape
 	pkill -USR1 -x sxhkd; \
 	notify-send --app-name=sxhkd --urgency=low "sxhkd config reloaded"
 
+Caps_Lock
+	$HOME/.scripts/layout
+
 # Lock Desktop
-# alt + l
-XF86Favorites
-    dunstify --urgency=low "Screen is locking" -r 3005; \
-	$HOME/.scripts/lock
+ctrl + alt + l
+    notify-send --app-name=i3lock --urgency=low "Screen is locking" & $HOME/.scripts/lock
 
 ctrl + alt + d
 	$HOME/.scripts/date	
@@ -43,7 +44,7 @@ ctrl + alt + b
 
 # QuteBrowser
 super + q
-	notify-send --app-name=qutebrowser --urgency=low "browser is running with webengine backend" & qutebrowser --backend webengine 
+	notify-send --app-name=qutebrowser --urgency=low "browser is running with webengine backend" & QT_AUTO_SCREEN_SCALE_FACTOR=1 qutebrowser --backend webengine 
 #
 # bspwm hotkeys
 #
@@ -167,58 +168,9 @@ super + ctrl + {Left,Right,Up,Down}
 
 # Screenshots
 Print
-	scrot $HOME/screenshots/%Y-%m-%d-%T-screenshot.png; \
+	scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
 	notify-send "Screenshot saved"
 
-ctrl + Print
-	gnome-screenshot -c; \
-	notify-send "Screenshot copied to clipboard"
-
-shift + Print
-	gnome-screenshot -a; \
-	notify-send "Screenshot saved"
-
-ctrl + shift + Print
-	gnome-screenshot -ac; \
-	notify-send "Screenshot copied to clipboard and saved"
-
-# Tizonia-rmote
-
-XF86Back
-	tizonia-remote prev
-
-XF86Forward
-	tizonia-remote next
-
-XF86AudioPlay
-	$HOME/.scripts/tizonia_toggle	
-# VOLUME
-
-### Mute
-XF86AudioMute
-	pulsemixer --toggle-mute
-
-### Master Volume
-XF86AudioRaiseVolume
-	pulsemixer --change-volume +1
-
-super + XF86AudioRaiseVolume
-	pulsemixer --change-volume +5
-
-XF86AudioLowerVolume
-	pulsemixer --change-volume -1
-
-super + XF86AudioLowerVolume
-	pulsemixer --change-volume -5
-
-# BRIGHTNESS
-
-# Brightness goes up
-#XF86MonBrightnessUp
-super + F6
-	/home/gamehelp16/Documents/brightness -u
-
-# Brightness goes down
-# XF86MonBrightnessDown
-super + F5
-	/home/gamehelp16/Documents/brightness -d	#
+alt + Print
+	scrot --focused ~/screenshots/%Y-%m-%d-%T-screenshot.png; \
+	notify-send "Screenshot of focused window was saved"
