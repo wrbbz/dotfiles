@@ -26,6 +26,10 @@ fi
 
 export QT_STYLE_OVERRIDE=GTK+
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+setxkbmap -option 'caps:swapescape'
+xkbset nullify lock
+
 sxhkd &
 dunst &
 kbdd &
