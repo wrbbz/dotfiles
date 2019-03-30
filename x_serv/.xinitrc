@@ -33,5 +33,6 @@ xkbset nullify lock
 sxhkd &
 dunst &
 kbdd &
+redhsift -O 3500 &
 xsetroot -cursor_name left_ptr
 exec bspwm
