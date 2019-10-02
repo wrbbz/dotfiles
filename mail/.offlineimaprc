@@ -26,7 +26,7 @@ nametrans = lambda folder: {'&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-': 'Sent',
                             '&BBgEQQRFBD4ENARPBEkEOAQ1-': 'Outbox',
                             '&BCcENQRABD0EPgQyBDgEOgQ4-': 'Drafts',
                             '&BCEEPwQwBDw-': 'Spam',
-                            '&BBoEPgRABDcEOAQ9BDA-': 'Trash',
+                            '&BBoEPgRABDcEOAQ9BDA-': 'rTash',
                             'INBOX': 'Inbox'}.get(folder, folder)
 
 [Repository spbpu_work-local]
