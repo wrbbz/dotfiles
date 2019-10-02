@@ -1,4 +1,4 @@
 #!/bin/zsh
 for COUNT in {0..9}
-do dunstify " `date +"%b %d %Y  %r"` `curl 'wttr.in/St-Petersburg?format=1'`" -r 3000 -u normal
+do dunstify " `date +"%b %d %Y %r"` `curl 'wttr.in/St-Petersburg?format=1'`" -r 3000 -u normal
 sleep 0.5; done
