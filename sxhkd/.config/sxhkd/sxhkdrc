@@ -209,15 +209,3 @@ XF86AudioLowerVolume
 
 super + XF86AudioLowerVolume
 	pulsemixer --change-volume -5
-
-# BRIGHTNESS
-
-# Brightness goes up
-#XF86MonBrightnessUp
-super + F6
-	/home/gamehelp16/Documents/brightness -u
-
-# Brightness goes down
-# XF86MonBrightnessDown
-super + F5
-	/home/gamehelp16/Documents/brightness -d	#
