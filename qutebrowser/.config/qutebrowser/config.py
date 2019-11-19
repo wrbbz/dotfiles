@@ -46,6 +46,7 @@ c.url.searchengines = {
     "comics": "http://getcomics.info/?s={}",
     "crates": "https://crates.io/search?q={}",
     "dh": "https://hub.docker.com/search?q={}&type=image",
+    "quay": "https://quay.io/search?q={}",
     "do": "https://www.digitalocean.com/community/search?q={}",
     "pac": "https://www.archlinux.org/packages/?q={}",
     "enru": "https://translate.google.com/#en/ru/{}",
