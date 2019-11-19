@@ -65,6 +65,8 @@ fileext = ".ics"
 
 [storage work_calendar_remote]
 type = "caldav"
-url = "https://cloud.spbpu.com/"
-username = "zorin"
+url="https://calendar.mail.ru/principals/spbpu.com/arseny.zorin/calendars/067E5DD0-D716-4830-99C4-D8CB087C0D54/"
+username = "arseny.zorin@spbpu.com"
+# url = "https://cloud.spbpu.com/"
+# username = "zorin"
 password.fetch = ["command", "pass", "aspod/vdirsync"]
