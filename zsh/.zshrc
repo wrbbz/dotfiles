@@ -12,6 +12,7 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 # Theme
+ZSH=/usr/share/oh-my-zsh/
 export ZSH_THEME="spaceship"
 
 # Uncomment the following line to enable command auto-correction.
@@ -21,9 +22,6 @@ plugins=(zsh-autosuggestions git)
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
-
-setxkbmap -layout "us,ru" option "grp:escape,grp_led:caps"
-xmodmap ~/.Xmodmap
 
 alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
 alias wttr="curl wttr.in"
