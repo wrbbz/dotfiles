@@ -1,3 +1,4 @@
 #!/bin/bash
 
-khal list --format '{title}. At: {start-time}.' --notstarted now 15d
+khal list --format '{title}. At: {start-time}.
+Location: {location}' --notstarted now 15d
