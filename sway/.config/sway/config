@@ -153,6 +153,8 @@ exec --no-startup-id dunst
 	bindsym $mod+Control+Right workspace next
 	bindsym $mod+Control+k workspace prev
 	bindsym $mod+Control+j workspace next
+
+	bindsym Control+Alt+l exec $HOME/.scripts/lock
 #
 # Layout stuff:
 #
