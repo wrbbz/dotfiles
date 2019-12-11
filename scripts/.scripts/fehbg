@@ -1,3 +1,3 @@
 #!/bin/sh
 
-feh --bg-fill --no-xinerama $HOME/.wallpaper/background.jpg
+feh --randomize --bg-fill --no-xinerama /home/rabbitaz/.wallpaper/*
