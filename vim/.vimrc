@@ -64,3 +64,7 @@ cnoremap w!! w !sudo tee > /dev/null %
 
 hi clear SpellBad
 hi SpellBad cterm=underline
+
+" Run NERDTree on vim startup
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
