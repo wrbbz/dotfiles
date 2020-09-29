@@ -16,7 +16,7 @@ if [[ ${bat_status} = 'Charging' ]]; then
 	for i in {0..2}; do
 		for j in "$pics[@]"; do
 			sleep 0.2
-			dunstify "$j $result%" -r 3003 -u low
+			notify-send "$j $result%" -t 3003 -u low
 		done
 	done
 else
@@ -31,5 +31,5 @@ else
 	elif [[ resutl -le 19 ]]; then
 		printmessage="  $result%"
 	fi
-	dunstify $printmessage -r 3003 -u low
+	notify-send $printmessage -t 3003 -u low
 fi
