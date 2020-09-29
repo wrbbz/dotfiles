@@ -1,5 +1,5 @@
 #!/bin/bash
-pic=`find $HOME/.lockscreen/ -type f | shuf -n 1`
+pic=`find $HOME/.lockscreen/ -type f -name '*.png' | shuf -n 1`
 
 swaylock -i $pic -n
-nohup compton &
+pkill settimed -USR1
