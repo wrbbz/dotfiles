@@ -81,7 +81,11 @@ output eDP-1 scale 2.5
     # Start your launcher
     bindsym $mod+d exec $menu
 
-    bindsym $mod+q exec sh -c "QT_QPA_PLATFORM=wayland qutebrowser --backend webengine"
+	bindsym $mod+space exec sh -c "wofi --show run"
+
+    bindsym $mod+q exec sh -c "qutebrowser --backend webengine"
+    bindsym $mod+Shift+f exec sh -c "MOZ_ENABLE_WAYLAND=1 firefox"
+    bindsym $mod+Shift+p exec sh -c "rofi-pass"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -155,6 +159,7 @@ output eDP-1 scale 2.5
 	bindsym $mod+Control+j workspace next
 
 	bindsym Control+Alt+l exec $HOME/.scripts/lock
+	bindsym Control+Alt+b exec $HOME/.scripts/battery
 #
 # Layout stuff:
 #
@@ -176,7 +181,7 @@ output eDP-1 scale 2.5
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
