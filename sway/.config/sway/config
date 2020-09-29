@@ -29,7 +29,7 @@ input * xkb_options "grp:caps_toggle"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg `find $HOME/.wallpaper -type f | shuf -n 1` fill
+exec settimed mojave-timed
 
 output eDP-1 scale 2.5
 
