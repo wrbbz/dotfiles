@@ -25,7 +25,7 @@ exec mako --border-radius 15 --background-color '#7c6f64' --border-color '#f9f5d
 seat seat0 xcursor_theme breeze-snow-cursor 
 
 input * xkb_layout "us,ru"
-input * xkb_options "grp:caps_toggle,caps:swapescape"
+input * xkb_options "grp:caps_toggle"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
