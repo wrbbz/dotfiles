@@ -4,7 +4,7 @@ export VISUAL="vim"
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$PATH:$HOME/mediahdd/local/RPi/crosstool-ng/bin/
+export PATH=$PATH:$HOME/.cargo/bin
 export BROWSER="GTK_BACKEND=wayland qutebrowser --backend webengine"
 
 # #Arch wiki
@@ -17,6 +17,7 @@ export ZSH_THEME="spaceship"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
+DISABLE_AUTO_UPDATE="true"
 
 plugins=(zsh-autosuggestions git)
 
@@ -64,4 +65,4 @@ __oui() {
 	grep $* -i /usr/share/nmap/nmap-mac-prefixes
 }
 alias ssproxy='ssh -D 8118 -C -N'
-alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='SF Pro Text' -o"
+alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='Fira Code' -o"
