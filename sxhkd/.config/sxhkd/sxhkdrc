@@ -9,7 +9,7 @@ super + Return
 
 # GNOME System Monitor
 ctrl + shift + Escape
-	alacritty -e htop
+	alacritty -e ytop
 
 # program launcher
 super + space
