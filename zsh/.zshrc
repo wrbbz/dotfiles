@@ -1,15 +1,17 @@
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR="vim"
+export VISUAL="vim"
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
-export PATH=$PATH:$HOME/mediahdd/local/RPi/crosstool-ng/bin/
 
 # #Arch wiki
 autoload -Uz compinit promptinit
 compinit
 promptinit
 # Theme
+ZSH=/usr/share/oh-my-zsh
 export ZSH_THEME="spaceship"
 
 # Uncomment the following line to enable command auto-correction.
