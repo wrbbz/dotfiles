@@ -93,7 +93,7 @@ c.colors.tabs.selected.even.bg = '#282828'
 c.colors.downloads.bar.bg = '#3c3836'
 c.colors.downloads.start.bg = '#665c54'
 c.colors.downloads.stop.bg = '#b8bb26'
-c.colors.webpage.bg = '#282828'
+c.colors.webpage.bg = '#fbf1c7'
 
 c.colors.messages.error.fg = '#ebdbb2'
 c.colors.messages.warning.fg = '#ebdbb2'
