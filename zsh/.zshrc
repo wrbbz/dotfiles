@@ -17,6 +17,7 @@ export ZSH_THEME="spaceship"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
+source <(kubectl completion zsh)
 plugins=(zsh-autosuggestions git)
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
