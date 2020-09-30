@@ -22,6 +22,7 @@ c.aliases = {
     "ff": "spawn firefox {url}",
     "yt": "open https://youtube.com/feed/subscriptions",
     "gb": "open https://github.com/morhetz/gruvbox",
+    "giva": "open https://docs.gitlab.com/ee/ci/variables/predefined_variables.html",
 }
 
 # AUR package: qt5-webengine-widevine
