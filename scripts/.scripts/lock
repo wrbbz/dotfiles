@@ -1,11 +1,8 @@
 #!/bin/bash
-killall compton
 setxkbmap us
-tmp="/tmp/lock"
-pic="$HOME/.wallpaper/lockscreen4k.png"
+killall compton
 
-convert "$pic" -pointsize 30 -font 'SF-Mono-Regular' -annotate +1600+800 "`~/.scripts/cal`" $tmp
-convert "$tmp" -pointsize 20 -font 'SF-Mono-Regular' -annotate +4050+150 "`task +Work or +Siemens li`" $tmp
+i3lock -i $HOME/.wallpaper/031.png -n
 
-i3lock -i /tmp/lock -n
 nohup compton &
+pkill settimed -USR1
