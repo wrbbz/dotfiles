@@ -35,6 +35,7 @@ let g:airline_powerline_fonts = 1
 " Groovebox theme
 colorscheme gruvbox
 set background=dark
+set termguicolors
 
 " save cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
