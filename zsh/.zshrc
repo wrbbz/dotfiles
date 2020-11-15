@@ -19,7 +19,7 @@ export ZSH_THEME="spaceship"
 ENABLE_CORRECTION="true"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(zsh-autosuggestions git)
+plugins=(zsh-autosuggestions git pulumi)
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/oh-my-zsh.sh
