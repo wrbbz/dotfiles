@@ -86,6 +86,7 @@ output eDP-1 scale 2.5
     bindsym $mod+q exec sh -c "qutebrowser --backend webengine"
     bindsym $mod+Shift+f exec sh -c "MOZ_ENABLE_WAYLAND=1 firefox"
     bindsym $mod+Shift+p exec sh -c "rofi-pass"
+    bindsym Print exec sh -c "grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') /home/rabbitaz/screenshots/$(date +'screenshot_%Y%m%d_%H%M%S.png')"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
