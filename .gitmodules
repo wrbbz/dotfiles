@@ -1,0 +1,3 @@
+[submodule "scripts/.scripts/wofi-scripts"]
+	path = scripts/.scripts/wofi-scripts
+	url = https://github.com/tobiaspc/wofi-scripts
