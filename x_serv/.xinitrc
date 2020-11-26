@@ -27,6 +27,7 @@ fi
 export QT_STYLE_OVERRIDE=GTK+
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-setxkbmap -option 'caps:swapescape'
-xkbset nullify lock
+setxkbmap -option 'grp:caps_toggle,grp_led:caps' -layout 'us,ru'
+compton&
+xsetroot -cursor_name left_ptr
 exec bspwm
