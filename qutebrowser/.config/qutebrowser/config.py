@@ -29,7 +29,7 @@ c.aliases = {
 c.qt.args = ["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so"]
 
 c.url.searchengines = {
-    "DEFAULT": "https://search.a.ejiek.com/?q={}",
+    "DEFAULT": "https://duckduckgo.com/?q={}",
     "g": "https://www.google.com/search?hl=en&q={}",
     "tpb": "https://thepiratebay.org/search/{}",
     "aw": "https://wiki.archlinux.org/?search={}",
