@@ -1,0 +1,5 @@
+[user]
+  email = arseny.zorin@spbpu.com
+  name = Arseny Zorin
+[commit]
+  template = ~/.config/git/aspod/message
