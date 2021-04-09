@@ -66,3 +66,4 @@ __oui() {
 }
 alias ssproxy='ssh -D 8118 -C -N'
 alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='Fira Code' -o"
+alias cal="cal --monday"
