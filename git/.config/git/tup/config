@@ -1,0 +1,5 @@
+[user]
+  email = arseny.zorin@stellarsolvers.com
+  name = Arseny Zorin
+[commit]
+  template = ~/.config/git/tup/message
