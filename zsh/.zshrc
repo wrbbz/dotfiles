@@ -2,6 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 export EDITOR="vim"
 export VISUAL="vim"
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
