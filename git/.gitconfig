@@ -2,7 +2,13 @@
 	email = arseny.zorin@spbpu.com
 	name = Arseny Zorin
 [core]
-	excludesfile = /home/arseny/.gitglobignore
+	excludesfile = ~/.gitglobignore
+[include]
+  path = ~/.config/git/private/config
+[includeIf "gitdir:~/work/pspod"]
+  path = ~/.config/git/pspod/config
+[includeIf "gitdir:~/work/tupperware"]
+  path = ~/.config/git/tup/config
 [alias]
 	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''	%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 [pull]
