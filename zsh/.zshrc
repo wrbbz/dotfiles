@@ -1,35 +1,34 @@
-export ZSH=$HOME/.oh-my-zsh
 export EDITOR="vim"
 export VISUAL="vim"
 export PATH=$PATH:/opt/apache-maven-3.5.0
 export PATH=/opt/apache-maven-3.5.0/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$PATH:$HOME/.cargo/bin
-export BROWSER="GTK_BACKEND=wayland qutebrowser --backend webengine"
 
 # #Arch wiki
-autoload -Uz compinit promptinit
+autoload -Uz compinit promptinit add-zsh-hook vcs_info
 compinit
 promptinit
-# Theme
-ZSH=/usr/share/oh-my-zsh/
-export ZSH_THEME="spaceship"
+setopt prompt_subst
+add-zsh-hook precmd vcs_info
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 DISABLE_AUTO_UPDATE="true"
+PROMPT='%F{167}%n%f in %F{108}%1~%f %F{208}${vcs_info_msg_0_}%f -> '
+
+# Enable checking for (un)staged changes, enabling use of %u and %c
+zstyle ':vcs_info:*' check-for-changes true
+# Set custom strings for an unstaged vcs repo changes (*) and staged changes (+)
+zstyle ':vcs_info:*' unstagedstr ' *'
+zstyle ':vcs_info:*' stagedstr ' +'
+# Set the format of the Git information for vcs_info
+zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
+zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 plugins=(zsh-autosuggestions git pulumi)
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $ZSH/oh-my-zsh.sh
-
-alias gits="ssh-add ~/.ssh/xxon_rsa && ssh-add ~/.ssh/id_rsa"
 alias wttr="curl wttr.in"
-alias untar="tar -xvzf"
-alias bckgrnd="feh ~/Pictures/background.jpg --bg-fill"
-alias rstudev="sudo udevadm control --reload-rules && udevadm trigger"
-alias trpntn="mpv --no-video --shuffle https://www.youtube.com/playlist\?list\=UUa10nxShhzNrCE1o2ZOPztg"
 alias trans='__trans'
 alias def='__def'
 __trans() {
@@ -66,4 +65,3 @@ __oui() {
 }
 alias ssproxy='ssh -D 8118 -C -N'
 alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='Fira Code' -o"
-alias cal="cal --monday"
