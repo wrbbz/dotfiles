@@ -1,3 +1,33 @@
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/Users/arseniyzorin/.vim/bundles/repos/github.com/Shougo/dein.vim
+
+" Required:
+call dein#begin('/Users/arseniyzorin/.vim/bundles')
+
+" Let dein manage dein
+" Required:
+call dein#add('/Users/arseniyzorin/.vim/bundles/repos/github.com/Shougo/dein.vim')
+
+call dein#add('morhetz/gruvbox')
+call dein#add('preservim/nerdtree')
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+"
+
 " More colours to the terminal
 set t_Co=256
 
