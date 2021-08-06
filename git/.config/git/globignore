@@ -1,16 +1,14 @@
 *.swp
 *.o
+*.env*
 
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-<<<<<<< HEAD
 .idea/*
 *.iml
 target/*
-=======
->>>>>>> git configs with stow
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
