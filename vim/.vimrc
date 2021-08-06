@@ -14,6 +14,9 @@ call dein#add('/Users/arseniyzorin/.vim/bundles/repos/github.com/Shougo/dein.vim
 
 call dein#add('morhetz/gruvbox')
 call dein#add('preservim/nerdtree')
+call dein#add('neoclide/coc.nvim')
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
 
 " Required:
 call dein#end()
@@ -22,11 +25,10 @@ call dein#end()
 filetype plugin indent on
 syntax enable
 
-" If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
-"
+" Install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
 
 " More colours to the terminal
 set t_Co=256
