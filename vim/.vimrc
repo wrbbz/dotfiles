@@ -52,6 +52,8 @@ set langmap=!\\"№\\;%?*ёйцукенгшщзхъфывапролджэячс�
 " Bye vi
 set nocompatible
 
+set re=0
+
 " Fuzzy search (down into subfolders)
 set path+=**
 
