@@ -9,22 +9,12 @@ export PATH=$PATH:$HOME/.cargo/bin
 autoload -Uz compinit promptinit add-zsh-hook vcs_info
 compinit
 promptinit
-setopt prompt_subst
-add-zsh-hook precmd vcs_info
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 DISABLE_AUTO_UPDATE="true"
-PROMPT='%F{167}%n%f in %F{108}%1~%f %F{208}${vcs_info_msg_0_}%f -> '
 
-# Enable checking for (un)staged changes, enabling use of %u and %c
-zstyle ':vcs_info:*' check-for-changes true
-# Set custom strings for an unstaged vcs repo changes (*) and staged changes (+)
-zstyle ':vcs_info:*' unstagedstr ' *'
-zstyle ':vcs_info:*' stagedstr ' +'
-# Set the format of the Git information for vcs_info
-zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
-zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 plugins=(zsh-autosuggestions git pulumi)
 
@@ -65,3 +55,6 @@ __oui() {
 }
 alias ssproxy='ssh -D 8118 -C -N'
 alias md2pdf="pandoc -s --pdf-engine=xelatex -V mainfont='Fira Code' -o"
+
+eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
