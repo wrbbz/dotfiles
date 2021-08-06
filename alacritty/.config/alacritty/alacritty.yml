@@ -14,19 +14,22 @@ env:
   # `infocmp xterm-256color`.
   TERM: xterm-256color
 
+window:
 # Window dimensions in character columns and lines
 # Falls back to size specified by window manager if set to 0x0.
 # (changes require restart)
-window.dimensions:
-  columns: 80
-  lines: 24
+  dimensions:
+    columns: 80
+    lines: 24
 
 # Adds this many blank pixels of padding around the window
 # Units are physical pixels; this is not DPI aware.
 # (change requires restart)
-window.padding:
-  x: 10
-  y: 2
+  padding:
+    x: 10
+    y: 2
+
+  decorations: buttonless
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
