@@ -22,6 +22,7 @@ set $menu sway-dmenu --dmenu='wofi -dmenu --insensetive'
 
 exec mako --border-radius 15 --background-color '#7c6f64' --border-color '#f9f5d7' --text-color '#f9f5d7' --font 'Fira Code' --icons 1 --progress-color '#83a598' --max-visible 5 --markup 1
 
+exec wlsunset
 seat seat0 xcursor_theme breeze-snow-cursor 
 
 input * xkb_layout "us,ru"
@@ -29,14 +30,15 @@ input * xkb_options "grp:caps_toggle"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-exec settimed mojave-timed
+# exec settimed mojave-timed
 
-output eDP-1 scale 2.5
+output "*" bg ~/.wallpaper/nomad.jpg fill
+# output * bg #282828 solid_color
 
 #
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
