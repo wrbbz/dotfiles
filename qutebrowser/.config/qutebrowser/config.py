@@ -54,6 +54,7 @@ c.url.searchengines = {
     "http": "https://httpstatuses.com/{}",
 }
 
+config.load_autoconfig(False)
 config.bind("<Alt-h>", "open -t https://github.com/ArsenyZorin")
 config.bind("<Ctrl-l>", "open -t https://gitlab.com/ArsenyZorin")
 config.bind("<Alt-m>", "spawn mpv {url} --ytdl-raw-options=mark-watched=")
@@ -92,7 +93,7 @@ c.colors.tabs.selected.even.bg = '#282828'
 c.colors.downloads.bar.bg = '#3c3836'
 c.colors.downloads.start.bg = '#665c54'
 c.colors.downloads.stop.bg = '#b8bb26'
-c.colors.webpage.bg = '#282828'
+c.colors.webpage.bg = '#ebdbb2'
 
 c.colors.messages.error.fg = '#ebdbb2'
 c.colors.messages.warning.fg = '#ebdbb2'
