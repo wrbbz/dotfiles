@@ -1,7 +1,6 @@
 export EDITOR="vim"
 export VISUAL="vim"
-export PATH=$PATH:/opt/apache-maven-3.5.0
-export PATH=/opt/apache-maven-3.5.0/bin:$PATH
+export PATH="/usr/local/opt/curl/bin:$PATH"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH=$PATH:$HOME/.cargo/bin
 
