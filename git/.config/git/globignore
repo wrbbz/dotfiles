@@ -1,6 +1,8 @@
 *.swp
 *.o
 *.env*
+*.werf_secret_key*
+*.helm/charts*
 
 # User-specific stuff:
 .idea/**/workspace.xml
