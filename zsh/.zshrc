@@ -15,7 +15,7 @@ DISABLE_AUTO_UPDATE="true"
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-plugins=(zsh-autosuggestions git pulumi)
+plugins=(zsh-autosuggestions git pulumi glab)
 
 alias wttr="curl wttr.in"
 alias trans='__trans'
