@@ -17,6 +17,7 @@ call dein#add('preservim/nerdtree')
 call dein#add('neoclide/coc.nvim')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+call dein#add('dhruvasagar/vim-table-mode')
 
 " Required:
 call dein#end()
