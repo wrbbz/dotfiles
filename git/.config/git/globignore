@@ -1,6 +1,7 @@
 *.swp
 *.o
 *.env*
+.npmrc
 *.werf_secret_key*
 *.helm/charts*
 
@@ -64,3 +65,4 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
+
