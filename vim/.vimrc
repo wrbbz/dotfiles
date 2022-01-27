@@ -97,6 +97,9 @@ set tabstop =2		" Show existing tabulations
 set shiftwidth =2
 " set softtabstop =2	" Tab key indents by 4 spaces.
 
+set list
+set listchars=tab:▸\ ,trail:·
+
 " Save with root permissions
 cnoremap w!! w !sudo tee > /dev/null %
 
