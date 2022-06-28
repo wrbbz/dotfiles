@@ -55,11 +55,14 @@ augroup resCur
 augroup END
 
 " Tabbulation
-set smarttab
 set autoindent		" Indent according to previous line.
-set tabstop =4		" Show existing tabulations
-set softtabstop =4	" Tab key indents by 4 spaces.
-set shiftwidth =4
+set expandtab
+set tabstop =2		" Show existing tabulations
+set shiftwidth =2
+" set softtabstop =4	" Tab key indents by 4 spaces.
+
+set list
+set listchars=tab:▸\ ,trail:·
 
 " Save with root permissions
 cnoremap w!! w !sudo tee > /dev/null %
