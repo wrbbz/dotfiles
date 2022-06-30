@@ -164,7 +164,7 @@ exec swayidle -w \
 	bindsym $mod+Control+j workspace next
 
 	bindsym Control+Alt+l exec swaylock -f -i ~/.lockscreen/redcode.png
-	bindsym Control+Alt+b exec $HOME/.scripts/battery
+	bindsym Control+Alt+d exec notify-send " `date +"%b %d %Y  %r"`" -t 3000 -u low
 #
 # Layout stuff:
 #
