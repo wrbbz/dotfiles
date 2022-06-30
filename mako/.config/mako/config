@@ -1,0 +1,11 @@
+border-radius=15
+background-color=#7c6f64
+border-color=#f9f5d7
+text-color=#f9f5d7
+font=Fira Code
+icons=1
+progress-color=#83a598
+max-visible=5
+markup=1
+default-timeout=5000
+sort=-time
