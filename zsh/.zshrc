@@ -7,6 +7,8 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+bindkey -e
+
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 DISABLE_AUTO_UPDATE="true"
