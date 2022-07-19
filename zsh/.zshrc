@@ -8,6 +8,7 @@ compinit
 promptinit
 
 bindkey -e
+local WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
