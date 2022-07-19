@@ -9,6 +9,9 @@ autoload -Uz compinit promptinit add-zsh-hook vcs_info
 compinit
 promptinit
 
+bindkey -e
+local WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 DISABLE_AUTO_UPDATE="true"
