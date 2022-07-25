@@ -17,16 +17,20 @@ env:
 # Window dimensions in character columns and lines
 # Falls back to size specified by window manager if set to 0x0.
 # (changes require restart)
-window.dimensions:
-  columns: 80
-  lines: 24
+window:
+  dimensions:
+    columns: 80
+    lines: 24
 
 # Adds this many blank pixels of padding around the window
 # Units are physical pixels; this is not DPI aware.
 # (change requires restart)
-window.padding:
-  x: 10
-  y: 2
+  padding:
+    x: 10
+    y: 2
+
+# Background opacity
+  opacity: 1
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -182,9 +186,6 @@ bell:
   animation: EaseOutExpo
   duration: 0
 
-# Background opacity
-window.opacity: 1
-
 # Mouse bindings
 #
 # Currently doesn't support modifiers. Both the `mouse` and `action` fields must
@@ -210,7 +211,7 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
-mouse.hide_when_typing: false
+mouse.hide_when_typing: true
 
 # Style of the cursor
 #
