@@ -110,3 +110,6 @@ hi SpellBad cterm=underline
 " Run NERDTree on vim startup
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" ssh config.d/* syntax highlighting
+autocmd BufRead,BufNewFile ~/.ssh/config.d/* set syntax=sshconfig
