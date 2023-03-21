@@ -62,3 +62,6 @@ alias ll='exa -l'
 
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
+
+zstyle ':completion:*:ssh:*' hosts off
+zstyle ':completion:*:ssh:*' config on
